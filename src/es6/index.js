@@ -52,3 +52,11 @@ console.log(person.name, person.age);
 //--Vamos a desestructurarlo
 let {name,age} = person; //de esta forma yo puedo extraer del objeto person lo que necesito
 console.log(name,age);
+
+//*Spread Operator
+//ciertos elementos en arreglos los cuales quiero unir en un solo elemento
+let team1 =['Oscar','Julian','Ricardo'];
+let team2 =['Valeria', 'Yesica','Camila'];
+//voy a crear un tercer elemento, el cual sera para estructurar esos dos team
+let education = ['David', ...team1, ...team2];
+console.log(education);
