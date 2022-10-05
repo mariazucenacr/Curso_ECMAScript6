@@ -28,3 +28,15 @@ console.log(epicPhrase);
 //Con ES6
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
+
+//*La multilenea
+//-Antes de ES6
+let lorem = "quiero escribir una frase epica que quiero separar /n"
++" otra frase epica que necesitamos.";
+//-Con ES6
+let lorem2 = `otra frase epica que necesitamos
+ahora es otra frase epica.
+`;
+
+console.log(lorem);
+console.log(lorem2);
