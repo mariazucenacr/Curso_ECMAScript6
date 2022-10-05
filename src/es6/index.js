@@ -40,3 +40,15 @@ ahora es otra frase epica.
 
 console.log(lorem);
 console.log(lorem2);
+
+//*Desestructuracion
+let person ={
+    'name' : 'oscar',
+    'age' : 32,
+    'country' : 'MX'
+} 
+console.log(person.name, person.age);
+
+//--Vamos a desestructurarlo
+let {name,age} = person; //de esta forma yo puedo extraer del objeto person lo que necesito
+console.log(name,age);
