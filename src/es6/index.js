@@ -60,3 +60,28 @@ let team2 =['Valeria', 'Yesica','Camila'];
 //voy a crear un tercer elemento, el cual sera para estructurar esos dos team
 let education = ['David', ...team1, ...team2];
 console.log(education);
+
+//*LET Y CONST
+//Let solo esta disponible en el scope
+//1
+{
+    var globalVar ='Global Var';
+}
+//2
+{
+    let globalLet ='Global Let';
+}
+
+console.log(globalVar); //si es accesible
+console.log(globalLet); //no es accesible porque debe ser llamada dentro de su bloque
+
+//2.1 aqui lo ponemos correctamente
+{
+    let globalLet ='Global Let';
+    console.log(globalLet);
+}
+
+//Const establece una variable no cambia su valor, con var si puede cambiar
+const a = 'b';
+a= 'a';
+console.log(a);
