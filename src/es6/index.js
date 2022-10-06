@@ -108,9 +108,9 @@ let listOfNames = names.map(function(item){
 //a establecer directamente el elemento que necesitamos
 let listOfNames2 = names.map(item => console.log(item.name));
 //otra forma
-const listOfNames3 = (name,age) => { ... };
+const listOfNames3 = (name,age) => { /*...*/ };
 //otra forma con solo un elemento
-const listOfNames4 = name => { ... };
+const listOfNames4 = name => { /*...*/ };
 //otra donde enviamos una funcion, donde no es necesario el return
 const square = num => num * num;
 
@@ -133,3 +133,4 @@ helloPromise()
 .then(()=> console.log('hola'))
 .catch(error => console.log(error));
 
+//*-
