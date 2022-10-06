@@ -93,3 +93,24 @@ let age = 26;
 obj = { name: name, age: age};
 //Ahora en ES6
 obj2={name,age};//de esta forma llama directo de las variables
+
+//*Arrow Functions(estas funciones vienen a solventar un problema en particular,
+//o a trabajar con dos elementos en una sintaxis más reducida)
+const names = [
+    {name: 'azucena',age: 26},
+    {name:'jin', age:22}
+];
+//Antes de ES6 se utilizaban funciones anonimas para mostrar  lo que se queria del array
+let listOfNames = names.map(function(item){
+    console.log(item.name);
+});
+//Ahora con ES6, en donde en vez de hacer una funcion anonima vamos
+//a establecer directamente el elemento que necesitamos
+let listOfNames2 = names.map(item => console.log(item.name));
+//otra forma
+const listOfNames3 = (name,age) => { ... };
+//otra forma con solo un elemento
+const listOfNames4 = name => { ... };
+//otra donde enviamos una funcion, donde no es necesario el return
+const square = num => num * num;
+
