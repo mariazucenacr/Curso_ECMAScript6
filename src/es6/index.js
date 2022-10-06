@@ -114,3 +114,22 @@ const listOfNames4 = name => { ... };
 //otra donde enviamos una funcion, donde no es necesario el return
 const square = num => num * num;
 
+//*-PROMESAS (Hay un curso en platzi exclusivo de eso)
+//generamos la promesa
+const helloPromise = () =>{
+    //va a resolver o va a ser rechazada
+    return new Promise((resolve,reject) => {
+        if (true){ ///si es true ejecuta resolve si es false entonces reject
+            resolve('Hey!');
+        }else{
+            reject('Ups!!!');
+        }
+    });
+}
+//vamos a ejecutarla
+helloPromise()
+.then(response => console.log(response))
+//podemos anidar una gran cantidad de elementos then
+.then(()=> console.log('hola'))
+.catch(error => console.log(error));
+
