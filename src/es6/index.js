@@ -85,3 +85,11 @@ console.log(globalLet); //no es accesible porque debe ser llamada dentro de su b
 const a = 'b';
 a= 'a';
 console.log(a);
+
+//*-PARAMETROS EN OBJETOS
+let name = 'Azucena';
+let age = 26;
+//Antes de ES6
+obj = { name: name, age: age};
+//Ahora en ES6
+obj2={name,age};//de esta forma llama directo de las variables
