@@ -133,4 +133,24 @@ helloPromise()
 .then(()=> console.log('hola'))
 .catch(error => console.log(error));
 
-//*-
+//*-CLASS
+class calculator {
+    //asignamos un constructor
+    constructor () { //aqui vamos asignar las variables que estaran en el scope global
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA,valueB){//método al cual yo le paso los dos elementos
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+    }
+    //A nuestra clase podemos añadirle muchos más métodos
+    //y también inicializarlos segun sea el caso
+}
+
+//Como lo utilizamos
+//generamos una constante donde igualamos a la clase creada
+const calc = new calculator ();
+console.log(calc.sum(2,2)); //y aqui llamamos al metodo que dispongo
+//de esta forma hemos trabajado con objetos y la herencia
