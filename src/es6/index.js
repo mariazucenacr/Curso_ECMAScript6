@@ -108,9 +108,9 @@ let listOfNames = names.map(function(item){
 //a establecer directamente el elemento que necesitamos
 let listOfNames2 = names.map(item => console.log(item.name));
 //otra forma
-const listOfNames3 = (name,age) => { /*...*/ };
+const listOfNames3 = (name,age) => { /*...aqui lo que va hacer la funcion*/ };
 //otra forma con solo un elemento
-const listOfNames4 = name => { /*...*/ };
+const listOfNames4 = name => { /*...aqui lo que va hacer la funcion*/ };
 //otra donde enviamos una funcion, donde no es necesario el return
 const square = num => num * num;
 
@@ -154,3 +154,11 @@ class calculator {
 const calc = new calculator ();
 console.log(calc.sum(2,2)); //y aqui llamamos al metodo que dispongo
 //de esta forma hemos trabajado con objetos y la herencia
+
+//*-MODULES (MODULOS) trabajando con Export e Import
+//Para ello vamos a crear un nuevo archivo llamado module.js para
+//trabajar con export e import y entender más sobre modulos
+//Aqui lo llamaremos con import al modulo creado en module.js
+import {hello} from './module.js';
+hello ();
+
