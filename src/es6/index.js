@@ -162,3 +162,35 @@ console.log(calc.sum(2,2)); //y aqui llamamos al metodo que dispongo
 import {hello} from './module.js';
 hello ();
 
+//*-GENERADORES (generator)
+//Primero hacemos una función, es una función especial
+//entonces su sintaxis va de esta forma
+function* helloWorld(){
+    if(true){
+        yield 'Hello, ';//me permite retornar algo,yield guarda el estado de manera interna
+    }
+    if(true){
+        yield 'World';//segundo elemento que va a ser llamado cuando se ejecute el sgte valor
+    }
+};
+//Como la voy a ejecutar
+//Voy a crear una constante el cual me va a permitir 
+//utilizar el valor next que permite ejecutar la primera logica y obtener 
+//el valor segun sea el caso
+const generatorHello = helloWorld();
+//cuando yo vuelvo a ejecutar el sgte valor next va a recordar donde estaba
+//en este caso la asignación logica que se acaba de crear
+//para mostrarme el segundo valor; y asi por cada uno de los steps
+// que pueda tener tu logica
+console.log(generatorHello.next().value);//aqui voy a necesitar el valor que me va a retornar por eso uso value
+//y asi lo voy a replicar para ver que sucede
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+//Nos trae el primer valor de la logica en este caso seria Hello
+//Luego nos trae el segundo valor de la logica en ese caso es World, el yield
+//recuerda cual es el valor consecuente
+//y con el ultimo llamado me trae undefined porque ya no hay otro valor a traer,
+//porque en la función creada no se definio
+//Esto es importantisimo cuando se trabajen con logicas o una serie de algoritmos
+//que querramos establecer desde nuestro y ver como se pueden ir ejecutandose
+//un ejemplo seria el fibonachi
