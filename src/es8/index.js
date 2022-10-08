@@ -42,3 +42,10 @@ console.log(string.padEnd(12,' -----'));//esto de igual forma se cuentan los car
 //Este padding sirve para mostrar una estructura de elementos, por la parte del front
 //por ejemplo en la impresión de un producto
 console.log('food'.padEnd(12,' ------'));
+
+//*-TRAILING COMMAS
+//*El cual establece que puedes poner una coma al final sin error
+//*para los objetos, esto es amigable para evitar los errores
+const data_1 ={
+    fronend: 'Azucena',
+}
