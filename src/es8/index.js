@@ -12,3 +12,15 @@ console.log(entries);
 //contiene un objeto
 console.log(entries.length);
 
+//*-Object.values()
+//*Obtener los valores de un objeto a un arreglo(array)
+const data_ ={
+    fronend: 'Azucena',
+    backend:'Jin',
+    desing: 'Felix',
+}
+//Como voy hacer la transformación
+const values = Object.values(data_);
+console.log(values);
+//también podemos contar cuantos elementos tenia
+console.log(values.length);
