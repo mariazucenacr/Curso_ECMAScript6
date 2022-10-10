@@ -32,3 +32,21 @@ const obj_1 ={
 };
 
 console.log(obj_1);
+
+//* Finally en promesas
+//cuando ha terminado el llamadao o logica de codigo segun sea el caso
+const helloWorld = () =>{
+    return new Promise((resolve,reject) =>
+    (true)
+    //? resolve('Hello World')
+    //solo para probar se pondra con un pequeño tiempo de 3 seg
+    ? setTimeout(() => resolve('Hello World'),3000)
+    : reject(new Error('Test Error'))
+    );
+};
+
+helloWorld()
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+//tenemos esta nueva forma de finalizar esta función
+    .finally(() => console.log('Finalizo'))
