@@ -50,3 +50,17 @@ helloWorld()
     .catch(error => console.log(error))
 //tenemos esta nueva forma de finalizar esta función
     .finally(() => console.log('Finalizo'))
+
+//*-RegEx (Expresiones regulares)
+//Aqui vamos a establecer la fecha 
+// con el formato año mes dia
+const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/
+//vamos hacer el match para ver como se mostrara la fecha
+const match =regexData.exec('2022-10-10');
+//ahora quiero acceder a cada elemento
+const year =match[1]
+const month =match[2]
+const day =match[3]
+//vamos a mostrar
+console.log(year,month,day);
+//esta caracteristica nos permite trabajar en un RegEx hacia un grupo
