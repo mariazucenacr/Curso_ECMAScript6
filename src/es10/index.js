@@ -45,3 +45,9 @@ try{
 //en objeto
 let entries = [["name","azucena"],["age",32]];
 console.log(Object.fromEntries(entries));
+
+//*-Objeto de tipo symbol
+//el cual nos permite acceder a una descripción
+let mySymbol = 'My Symbol';
+let symbol = Symbol(mySymbol);
+console.log(symbol.description);
