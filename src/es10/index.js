@@ -28,3 +28,13 @@ let hello_2 = 'hello world     ';
 console.log(hello_2);
 console.log(hello_2.trimEnd);
 
+//*-Valor opcional de CATCH
+//donde ya no es necesario ponerle un parametro 
+//al lado del catch para usarlo se puede usar directo
+//antes: catch (error){}
+//ahora
+try{
+
+}catch{
+    error
+}
