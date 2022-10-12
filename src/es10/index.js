@@ -38,3 +38,10 @@ try{
 }catch{
     error
 }
+
+//*-Transformar un array de arrays en un objeto
+//creamos un array con dos elementos y su clave
+//es decir clave,valor en un array para convertirlo
+//en objeto
+let entries = [["name","azucena"],["age",32]];
+console.log(Object.fromEntries(entries));
