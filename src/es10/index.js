@@ -16,3 +16,15 @@ console.log(array.flat(2));//pasariamos 2 como argumento
 //y aplanar el resultado
 let array_1=[1,2,3,4,5];
 console.log(array_1.flatMap(value => [value, value *2]));
+
+//*-Metodos para quitar espacios en blanco en string
+//*trimStart (quita espacios del incio)
+let hello = '      hello world';
+console.log(hello);
+console.log(hello.trimStart);
+
+//*trimEnd (quita espacios del final)
+let hello_2 = 'hello world     ';
+console.log(hello_2);
+console.log(hello_2.trimEnd);
+
