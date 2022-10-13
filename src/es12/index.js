@@ -36,3 +36,13 @@ message.show('Hola');
 //con ello nos va a salir un error, porque no esta disponible;por el
 //hecho de que ahora es privado
 
+//*-Promise.any
+//es un objeto global de promise, cuyo argumento va a ser la forma de
+//un array de promesas que vamos a pasarle, gestionando y capturando
+//la respuesta de la primera promesa que sea resuelta de forma satisfactoria
+const promise_1 = new Promise((resolve,reject) => reject ("1"));
+const promise_2 = new Promise((resolve,reject) => resolve ("2"));
+const promise_3 = new Promise((resolve,reject) => resolve ("3"));
+
+Promise.any([promise_1,promise_2.promise_3])
+    .then(response => console.log(response));
