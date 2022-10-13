@@ -53,3 +53,24 @@ console.log(fooo);
 
 const fooo2 = 'not null' ?? 'default string';
 console.log(fooo2);
+
+//*-Operador de encadenamiento opcional (Optional chaining)
+//vamos a poder trabajar diferentes niveles de estos recursos
+//del objeto
+const user = {};//lo creamos vacio, pensando que en una api
+                //vamos a crear los elementos de user
+//En la aplicación se supone que debemos llamar a un elemento interno
+//para obtener la información 
+console.log(user.profile.email);
+//como na hay nada y no puede hacer lo que se pidio entonces saldra error
+//porque no hay nada, entonces con optional chaining vamos a hacer lo sgte
+console.log(user?.profile?.email);
+//aqui le decimos que lea hasta el nivel donde esta ? pero no rompa,corte
+//o detenga la aplicación que se esta ejecutando
+//esto lo define como undefined, por lo que puedo seguir usando mi 
+//aplicacipon, porque le dio un valor 
+if(user?.profile?.email) {
+    console.log('email')
+} else{
+    console.log('fail')
+};
