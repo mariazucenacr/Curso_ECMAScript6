@@ -46,3 +46,14 @@ const promise_3 = new Promise((resolve,reject) => resolve ("3"));
 
 Promise.any([promise_1,promise_2.promise_3])
     .then(response => console.log(response));
+
+//*-WeakRef (Referencias debiles)
+//esta referencia debil se usa en objetos
+//para evitar que el objeto sea recogido por la estructura interna
+//del lenguaje de programación
+class anyClass{
+    constructor(element){
+        this.ref = new WeakRef(element);
+    };
+    //{aqui puedes continuar la logica que corresponde}
+};
