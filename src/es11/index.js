@@ -32,3 +32,17 @@ Promise.allSettled([promise1,promise2,promise3])
 //con un estado(rejected,fulfilled,fulfilled) y reason(para reject, donde
 //da reject) , value(para resolve el cual sa resolve)esas respuestas son las 
 // que pusimos 
+
+//*-Operador global
+//window,self,frame o this, se va a obtener un resultado
+//esto se puede ver desde el navegador
+console.log(window);
+console.log(self);
+console.log(frames);
+console.log(this);
+//la propiedad globalThis proporciona una forma estandar de
+//acceder al valor global no solamente desde el navegador
+//sino también de las aplicaciones creadas en node
+console.log(window);//no funciona en visual
+console.log(globalThis);//si funciona en todos
+
