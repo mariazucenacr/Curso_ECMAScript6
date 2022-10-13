@@ -57,3 +57,17 @@ class anyClass{
     };
     //{aqui puedes continuar la logica que corresponde}
 };
+
+//*-Nuevos operadores de asignación
+//AND
+let isTrue = true;
+let isFalse = false;
+console.log(isTrue &&= isFalse);
+//OR
+let isTrue2 = true;
+let isFalse2 = false;
+console.log(isTrue2 ||= isFalse2);
+//NULL
+let isTrue3 = undefined;
+let isFalse3 = false;
+console.log(isTrue2 ??= isFalse2);
