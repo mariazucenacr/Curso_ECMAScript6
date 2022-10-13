@@ -19,3 +19,16 @@ const anotherBigIntNumber = BigInt(9007199254740991n);
 
 console.log(aBigNumber);
 console.log(anotherBigIntNumber);
+
+//*-PROMESAS
+const promise1 = new Promise((resolve,reject) => reject("reject"));
+const promise2 = new Promise((resolve,reject) => resolve("resolve"));
+const promise3 = new Promise((resolve,reject) => resolve("resolve 1"));
+//Promise.allSettled :no importa el estado de las promesas, va a 
+//terminar y nos va a regresar bviamente la información
+Promise.allSettled([promise1,promise2,promise3])
+    .then(response => console.log(response))
+//esto nos regresa una estructura para saber cada uno de estos elementos
+//con un estado(rejected,fulfilled,fulfilled) y reason(para reject, donde
+//da reject) , value(para resolve el cual sa resolve)esas respuestas son las 
+// que pusimos 
