@@ -46,3 +46,10 @@ console.log(this);
 console.log(window);//no funciona en visual
 console.log(globalThis);//si funciona en todos
 
+//*-Operador Nullish Coalescing
+//Ayuda a trabajar con los nulos
+const fooo = null ?? 'default string';
+console.log(fooo);
+
+const fooo2 = 'not null' ?? 'default string';
+console.log(fooo2);
